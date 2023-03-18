@@ -63,11 +63,7 @@ function ProductPage(): JSX.Element {
     return (
         <div className="ProductPage">
             <div className="ProductPageContent">
-                <div className="ProductPageUsername">
-                    {product?.userId !== userId && product ?
-                        <ProductPageMessage product={product} />
-                        : "Me"}
-                </div>
+
                 <div className="ProductPageTitle">
                     <h3>{product?.productName}</h3>
 

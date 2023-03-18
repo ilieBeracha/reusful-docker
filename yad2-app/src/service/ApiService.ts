@@ -55,6 +55,16 @@ class ApiService {
         }
     }
 
+    async getAmountOfProductsByCategorie() {
+        try {
+            const res = await axios.get(`${BASE_URL}/categories/chart`);
+            return res.data
+        } catch (e) {
+            console.log(e);
+
+        }
+    }
+
     // products 
 
     async getProductsByCategorieId(id: number) {

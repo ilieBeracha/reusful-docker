@@ -15,7 +15,6 @@ import { useEffect, useState } from 'react';
 import LogoutIcon from '@mui/icons-material/Logout';
 import PersonIcon from '@mui/icons-material/Person';
 import { profileComponentFunctions } from '../../../functions/ProfileComponentFunctions';
-import MessageIcon from '@mui/icons-material/Message';
 
 export default function ProfileComponent() {
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -107,17 +106,6 @@ export default function ProfileComponent() {
                     </NavLink>
                 </div>
                 <Divider />
-                <div className='ProfileButton'>
-
-                    <NavLink to={'/messages'}>
-                        <MenuItem>
-                            <ListItemIcon>
-                                <MessageIcon />
-                            </ListItemIcon>
-                            Messages
-                        </MenuItem>
-                    </NavLink>
-                </div>
                 <MenuItem onClick={() => Logout()}>
                     <ListItemIcon>
                         <LogoutIcon />

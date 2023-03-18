@@ -19,18 +19,13 @@
     margin: 0;
 }
 
-.WelcomeComponentImage {
+.WelcomeComponentChart {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
     height: 100%;
 }
-
-.WelcomeComponentImage img {
-    width: 80%;
-}
-
 
 .WelcomeComponentSen {
     display: flex;

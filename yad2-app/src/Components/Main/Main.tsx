@@ -7,8 +7,6 @@ import Register from "../Register/Register";
 import CategoriePage from "./CategoriePage/CategoriePage";
 import ProductPage from "./CategoriePage/Products/ProductPage/ProductPage";
 import Home from "./Home/Home";
-import Conversation from "./MessagesPage/Message/Conversation/Conversation";
-import MessagesPage from "./MessagesPage/MessagesPage";
 import AddProduct from "./Profile/AddProduct/AddProduct";
 import Profile from "./Profile/Profile";
 import "./Main.css";
@@ -35,8 +33,6 @@ function Main(): JSX.Element {
                 <Route path="/categorie/:id" element={<CategoriePage />}></Route>
                 <Route path="/addproduct" element={<AddProduct />}></Route>
                 <Route path="/productpage/:id" element={<ProductPage />}></Route>
-                <Route path="/messages" element={<MessagesPage />}></Route>
-                <Route path="/chat/:id" element={<Conversation />}></Route>
             </Routes>
         </div>
     );

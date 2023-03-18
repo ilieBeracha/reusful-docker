@@ -3,7 +3,7 @@ import * as dotenv from 'dotenv'
 dotenv.config();
 
 const pool = mysql.createPool({
-    host: 'host.docker.internal',
+    host: 'localhost',
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
     port:3306,

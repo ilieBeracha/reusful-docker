@@ -23,5 +23,5 @@ server.use(CartRoute)
 server.use(MessagesRoute)
 
 server.listen(process.env.PORT, () => {
-    console.log('listening...');
+    console.log(`listening on port ${process.env.PORT}`);
 })

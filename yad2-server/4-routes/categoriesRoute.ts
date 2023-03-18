@@ -1,5 +1,5 @@
 import express from 'express';
-import { addImageForCategorie,getAllCategories } from '../2-logic/categorieLogic';
+import { addImageForCategorie,getAllCategories, getAmountOfProductsByCategories } from '../2-logic/categorieLogic';
 
 export const CategoriesRoute = express.Router();
 
@@ -12,4 +12,13 @@ CategoriesRoute.post('/categories/image', async (req:any, res:any) => {
     const body = req.files;
     await addImageForCategorie(body)
 
+})
+
+CategoriesRoute.get('/categories/chart',async (req,res)=>{
+    try{
+        const results = await getAmountOfProductsByCategories();
+        res.status(200).json(results);
+    }catch(e){
+        res.status(400).json(e)
+    }
 })

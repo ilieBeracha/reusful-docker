@@ -14,6 +14,8 @@ export async function saveImagesToS3(file: any, imageId: string) {
         throw new Error(`S3 upload error: ${err.message}`)
     }
 }
+
+
 export async function saveProductImagesToS3(files: any, imageId: string) {
     try {
         const type = files.name.split('.')[1];
